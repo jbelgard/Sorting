@@ -3,12 +3,27 @@ def merge( arrA, arrB ):
     elements = len( arrA ) + len( arrB )
     merged_arr = []
     # TO-DO
-
-    if arrA < arrB:
-      merged_arr = merged_arr.append(arrA)
-
-    pring(merged_arr)
-    
+    # Compare first item in arrA to first item in arrB
+    for i in range(elements):
+      if arrA and arrB:
+        print(f"arr A and B {arrA[0]}, {arrB[0]}")
+        if arrA[0] < arrB[0]:
+          merged_arr.append(arrA[0])
+          arrA = arrA[1:]
+        elif arrA[0] > arrB[0]:
+          merged_arr.append(arrB[0])
+          arrB = arrB[1:]
+      elif arrA:
+        print (f"arr A: {arrA[0]}")
+        merged_arr.append(arrA[0])
+        arrA = arrA[1:]
+      elif arrB:
+        print(f"arr B: {arrB[0]}")
+        merged_arr.append(arrB[0])
+        arrB = arrB[1:]
+      #If first item in arrA is less than first item in arrB, move said into merged_arr
+      #If first item in arrB is less than first item in arrA, move said into merged_arr
+      print(merged_arr)
     return merged_arr
 
 
