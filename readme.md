@@ -7,6 +7,7 @@ In this two day project, you will be implementing many different solutions to th
 For the sorting module, it's OK to Google for things like this:
 
 * Pseudocode
+
 * Descriptions of algorithms
 * Videos that show how the algorithm works
 
